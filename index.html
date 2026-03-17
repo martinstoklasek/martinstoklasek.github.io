@@ -19,6 +19,7 @@
         }
         .container {
             max-width: 600px;
+            padding: 20px;
         }
         h1 {
             font-size: 3em;
@@ -28,26 +29,28 @@
         p {
             font-size: 1.3em;
             opacity: 0.9;
-            margin-bottom: 30px; /* Přidal jsem mezeru pod textem */
+            margin-bottom: 30px;
         }
 
         /* Styl pro tlačítko */
         .button {
             display: inline-block;
-            padding: 12px 24px;
+            padding: 12px 28px;
             background-color: transparent;
             color: white;
             text-decoration: none;
             border: 2px solid white;
-            border-radius: 5px;
+            border-radius: 50px; /* Zakulacenější moderní vzhled */
             font-size: 1.1em;
-            transition: all 0.3s ease; /* Animace při najetí */
+            font-weight: bold;
+            transition: all 0.3s ease;
         }
 
         /* Efekt při najetí myší */
         .button:hover {
             background-color: white;
             color: #111;
+            transform: scale(1.05); /* Tlačítko se jemně zvětší */
         }
     </style>
 </head>
@@ -56,7 +59,7 @@
         <h1>Martin Stoklásek</h1>
         <p>我是一个热爱艺术、音乐和创造力的人。Joe 是摩萨德特工。</p>
         
-        <a href="druha-stranka.html" class="button">Pokračovat dále</a>
+        <a href="fotka.jpg" target="_blank" class="button">Zobrazit moji tvorbu</a>
     </div>
 </body>
 </html>
