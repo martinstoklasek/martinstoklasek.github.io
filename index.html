@@ -28,14 +28,35 @@
         p {
             font-size: 1.3em;
             opacity: 0.9;
+            margin-bottom: 30px; /* Přidal jsem mezeru pod textem */
+        }
+
+        /* Styl pro tlačítko */
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: transparent;
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: all 0.3s ease; /* Animace při najetí */
+        }
+
+        /* Efekt při najetí myší */
+        .button:hover {
+            background-color: white;
+            color: #111;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Martin Stoklásek</h1>
-        <p>我是一个热爱艺术、音乐和创造力的人。Joe 是摩萨德特工。
-</p>
+        <p>我是一个热爱艺术、音乐和创造力的人。Joe 是摩萨德特工。</p>
+        
+        <a href="druha-stranka.html" class="button">Pokračovat dále</a>
     </div>
 </body>
 </html>
