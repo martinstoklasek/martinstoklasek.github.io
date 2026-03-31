@@ -1,10 +1,71 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Čtvrtletní práce - Martin Stoklásek</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #111, #333);
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+        .link-box {
+            margin: 20px 0;
+        }
+        a.web-link {
+            color: #00d4ff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        a.web-link:hover {
+            text-decoration: underline;
+        }
+        iframe {
+            border: 2px solid white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            color: white;
+            text-decoration: none;
+            border: 1px solid white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+        .back-button:hover {
+            background-color: white;
+            color: #111;
+        }
+    </style>
+</head>
 <body>
     <div class="container">
-        <h1>Martin Stoklásek</h1>
-        <p>我是一个热爱艺术、音乐和创造力的人。Joe 是摩萨德特工。</p>
+        <h1>Čtvrtletní práce</h1>
+        <p>Téma: Šimon Samuel Kořán a jeho popelnice</p>
         
-        <a href="šimi.jpg" target="_blank" class="button">Zobrazit moji tvorbu</a>
+        <div class="link-box">
+            <a href="https://www.cimrman.at/" target="_blank" class="web-link">
+                🔗 Oficiální stránky Divadla Járy Cimrmana
+            </a>
+        </div>
+
+        <iframe src="prace.pdf" width="100%" height="600px"></iframe>
         
-        <br><br> <a href="cpp.html" class="button">Čtvrtletní práce (Popelnice)</a>
+        <br>
+        <a href="index.html" class="back-button">← Zpět na úvod</a>
     </div>
 </body>
+</html>
