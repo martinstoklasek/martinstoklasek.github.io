@@ -14,30 +14,33 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh; /* Změněno na min-height, aby se tlačítka vešla */
             text-align: center;
         }
         .container {
             max-width: 600px;
-            padding: 20px;
+            padding: 40px 20px;
         }
         h1 {
             font-size: 3em;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             letter-spacing: 2px;
         }
         p {
-            font-size: 1.3em;
-            opacity: 0.9;
-            margin-bottom: 30px;
+            font-size: 1.2em;
+            opacity: 0.8;
+            margin-bottom: 40px;
         }
-
-        /* Společný styl pro tlačítka */
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Mezera mezi tlačítky */
+            align-items: center;
+        }
         .button {
-            display: inline-block;
-            width: 250px; /* Sjednocená šířka pro estetiku */
-            padding: 12px 0;
-            margin: 10px 5px;
+            display: block;
+            width: 260px;
+            padding: 15px 0;
             background-color: transparent;
             color: white;
             text-decoration: none;
@@ -47,18 +50,10 @@
             font-weight: bold;
             transition: all 0.3s ease;
         }
-
-        /* Efekt při najetí myší */
         .button:hover {
             background-color: white;
             color: #111;
             transform: scale(1.05);
-        }
-
-        .button-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
     </style>
 </head>
@@ -67,7 +62,7 @@
         <h1>Martin Stoklásek</h1>
         <p>我是一个热爱艺术、音乐和创造力的人。Joe 是摩萨德特工。</p>
         
-        <div class="button-container">
+        <div class="button-group">
             <a href="šimi.jpg" target="_blank" class="button">Zobrazit moji tvorbu</a>
             
             <a href="cpp.html" class="button">Čtvrtletní práce</a>
