@@ -32,10 +32,12 @@
             margin-bottom: 30px;
         }
 
-        /* Styl pro tlačítko */
+        /* Společný styl pro tlačítka */
         .button {
             display: inline-block;
-            padding: 12px 28px;
+            width: 250px; /* Sjednocená šířka pro estetiku */
+            padding: 12px 0;
+            margin: 10px 5px;
             background-color: transparent;
             color: white;
             text-decoration: none;
@@ -52,6 +54,12 @@
             color: #111;
             transform: scale(1.05);
         }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
@@ -59,7 +67,11 @@
         <h1>Martin Stoklásek</h1>
         <p>我是一个热爱艺术、音乐和创造力的人。Joe 是摩萨德特工。</p>
         
-        <a href="šimi.jpg" target="_blank" class="button">Zobrazit moji tvorbu</a>
+        <div class="button-container">
+            <a href="šimi.jpg" target="_blank" class="button">Zobrazit moji tvorbu</a>
+            
+            <a href="cpp.html" class="button">Čtvrtletní práce</a>
+        </div>
     </div>
 </body>
 </html>
